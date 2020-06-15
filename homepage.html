@@ -8,86 +8,210 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="./assets/css/app.css">
-    <!-- CSS only -->
+    <!-- Bootstrap-CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- Bootstrap-JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-success border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-phone-square"></i>
+                <span>(028) 73 099 939</span>
+            </a>
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-envelope"></i>
+                <span>lienhe@medihub.com.vn</span>
+            </a>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngClass]="{ show: isExpanded }">
+                <ul class="navbar-nav flex-grow">
+                    <li class="nav-item" [routerLinkActive]="['link-active']"
+                        [routerLinkActiveOptions]="{ exact: true }">
+                        <a class="nav-link text-light" href="#">VI</a>
+                    </li>
+                    <li class="nav-item" [routerLinkActive]="['link-active']">
+                        <a class="nav-link text-light" href="#">EN</a>
+                    </li>
+                    <li class="nav-item" [routerLinkActive]="['link-active']">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" [routerLinkActive]="['link-active']">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" [routerLinkActive]="['link-active']">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
 <body>
-    <div class="row bg-success">
+    <div class="header-bottom bg-light">
         <div class="container">
             <div class="row">
-                <div class="text-light col-lg-6 col-md-8 col-12">
-                    <a class="list-icon">
-                        <i class="fas fa-phone"></i>
-                        <span>(028) 73 099 939</span>
-                    </a>
-                    <a class="list-icon">
-                        <i class="fa fa-envelope"></i>
-                        <span>lienhe@medihub.com.vn</span>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-8 col-12">
-                    <a href="/" class="list-icon flags flags__active">VI</a>
-                    <a href="/en" class="list-icon flags">EN</a>
-                    <a href="" class="list-icon list-icon__res fb">
-                        <i class="fi flaticon-facebook mr-0"></i>
-                    </a>
-                    <a href="" class="list-icon list-icon__res yt">
-                        <i class="fi flaticon-youtube mr-0"></i>
-                    </a>
-                    <a href="" class="list-icon list-icon__res in mr-0">
-                        <i class="fi flaticon-linkedin mr-0"></i>
-                    </a>
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-sm navbar-light">
+                        <a class="logo" href="#">
+                            <img src="assets/img/logo.png" alt="Logo" style="width:200px;">
+                        </a>
+                        <div class="collapse navbar-collapse d-sm-inline-flex flex-sm-row-reverse">
+                            <ul class="navbar-nav flex-grow">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Về chúng tôi</a>
+                                </li>
+                                <li class="nav-item dropdown menu-item">
+                                    <a class="nav-link dropdown-toggle" role="button" href="#" data-toggle="dropdown">
+                                        Dịch vụ
+                                    </a>
+                                    <div class="dropdown-menu dropdown__menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">MediHub Channel</a>
+                                        <a class="dropdown-item" href="#">PharmaCom</a>
+                                        <a class="dropdown-item" href="#">MDCom</a>
+                                        <a class="dropdown-item" href="#">BTL Service</a>
+                                        <a class="dropdown-item" href="#">DCS</a>
+                                        <a class="dropdown-item" href="#">Haykhoe.vn</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="header-2">
-        <div class="">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="navbar-brand">
-                    <img class="img-fluild" src="./assets/img/logo.png" alt="">
-                </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <section class="banner-top">
+        <div class="container">
+            <img src="./assets/img/banners/banner-home.svg" alt="" class="img-fluid">
+        </div>
+    </section>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Trang chủ<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Về chúng tôi</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dịch vụ
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Medihub Channel</a>
-                                <a class="dropdown-item" href="#">PharmaCom</a>
-                                <a class="dropdown-item" href="#">MDCom</a>
-                                <a class="dropdown-item" href="#">BTL Service</a>
-                                <a class="dropdown-item" href="#">DCS</a>
-                                <a class="dropdown-item" href="#">Haykhoe.vn</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <div class="container logo-intro">
+        <div class="d-flex justify-content-center align-items-center">
+            <img src="./assets/img/logo-vertical.png" alt="" class="img-fluid">
+        </div>
+        <div class="intro__content justify-content-center mt-5 mb-5">
+            <p> Là các<strong> Kênh truyền thông</strong> và <strong>Mạng xã hội <br class="d-xl-block d-none"></strong>
+                để kết
+                nối<strong> Người
+                    dân</strong> với các Cơ sở y tế, Nhân viên Y tế, <br class="d-xl-block d-none">Sản phẩm và dịch vụ
+                với mong
+                muốn mang đến sức khỏe <br class="d-xl-block d-none"> tốt hơn
+                cho cộng đồng
+            </p>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 fadeIn">
+                <a class="home-products__item" href="#">
+                    <img src="./assets/img/products/medihubchannel/medihubchannel-thumbnail.jpg" alt="">
+                    <div class="home-products__content">
+                        <img src="./assets/img/logo-medihubchannel.svg" alt="" class="home-products__logo">
+                        <p class="home-products__intro">Kênh truyền thông Giáo dục<br class="d-xl-block d-none"> Sức
+                            khỏe
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 fadeIn">
+                <a href="" class="home-products__item ">
+                    <img class="home-products__thumbnail" src="./assets/img/products/pharmacom/pharmacom-thumbnail.jpg"
+                        alt="">
+                    <div class="home-products__content">
+                        <img src="./assets/img/logo-pharmacom.svg" alt=""
+                            class="home-products__logo home-products__logo--option1">
+                        <p class="home-products__intro">Cộng đồng Nhà thuốc
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 fadeIn">
+                <a href="" class="home-products__item">
+                    <img class="home-products__thumbnail" src="./assets/img/products/mdcom/mdcom-thumbnail.jpg" alt="">
+                    <div class="home-products__content">
+                        <img src="./assets/img/logo-mdcom.svg" alt=""
+                            class="home-products__logo home-products__logo--option2">
+                        <p class="home-products__intro">Cộng đồng Nhân viên Y tế
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 fadeIn">
+                <a href="" class="home-products__item">
+                    <img class="home-products__thumbnail" src="./assets/img/products/BTL/BTLService.jpg" alt="">
+                    <div class="home-products__content">
+                        <img src="./assets/img/products/BTL/btl-logo.svg" alt="" class="home-products__logo">
+                        <p class="home-products__intro">Dịch vụ tổ chức các chương trình, sự kiện, hội thảo, hội nghị…
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 fadeIn">
+                <a href="" class="home-products__item ">
+                    <img class="home-products__thumbnail" src="./assets/img/products/DCS/dcs.jpg" alt="">
+                    <div class="home-products__content">
+                        <img src="./assets/img/products/DCS/dcs-logo.svg" alt=""
+                            class="home-products__logo home-products__logo--option1">
+                        <p class="home-products__intro">Giải pháp truyền thông số
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 fadeIn">
+                <a href="" class="home-products__item">
+                    <img class="home-products__thumbnail" src="./assets/img/products/haykhoe/haykhoe-thumbnail.jpg"
+                        alt="">
+                    <div class="home-products__content">
+                        <img src="./assets/img/products/haykhoe/haykhoe-logo.svg" alt="" class="home-products__logo">
+                        <p class="home-products__intro">Thương mại điện tử B2B2C
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section-title">
+        <h1 class="title-partner">ĐỐI TÁC</h1>
+        <h2>Chúng tôi tự hào khi có sự hợp tác thành công
+            <br class="d-xl-block d-none">
+            với nhiều đơn vị danh tiếng</h2>
+    </section>
+
 </body>
 
 </html>
