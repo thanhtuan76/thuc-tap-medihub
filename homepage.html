@@ -8,6 +8,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
     <!-- Bootstrap-CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -22,6 +24,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="./assets/js/slick.js"></script>
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -31,7 +35,8 @@
 </head>
 
 <header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-success border-bottom box-shadow mb-3">
+    <nav
+        class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-success border-bottom box-shadow sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <i class="fa fa-phone-square"></i>
@@ -83,13 +88,14 @@
                         <div class="collapse navbar-collapse d-sm-inline-flex flex-sm-row-reverse">
                             <ul class="navbar-nav flex-grow">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Trang chủ</a>
+                                    <a class="nav-link menu-item__link menu-item__link--active" href="#">Trang chủ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Về chúng tôi</a>
+                                    <a class="nav-link menu-item__link" href="#">Về chúng tôi</a>
                                 </li>
                                 <li class="nav-item dropdown menu-item">
-                                    <a class="nav-link dropdown-toggle" role="button" href="#" data-toggle="dropdown">
+                                    <a class="nav-link dropdown-toggle menu-item__link" role="button" href="#"
+                                        data-toggle="dropdown">
                                         Dịch vụ
                                     </a>
                                     <div class="dropdown-menu dropdown__menu" aria-labelledby="navbarDropdown">
@@ -102,7 +108,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Liên hệ</a>
+                                    <a class="nav-link menu-item__link" href="#">Liên hệ</a>
                                 </li>
                             </ul>
                         </div>
@@ -138,7 +144,8 @@
         <div class="row">
             <div class="col-lg-4 col-sm-6 fadeIn">
                 <a class="home-products__item" href="#">
-                    <img src="./assets/img/products/medihubchannel/medihubchannel-thumbnail.jpg" alt="">
+                    <img class="home-products__thumbnail"
+                        src="./assets/img/products/medihubchannel/medihubchannel-thumbnail.jpg" alt="">
                     <div class="home-products__content">
                         <img src="./assets/img/logo-medihubchannel.svg" alt="" class="home-products__logo">
                         <p class="home-products__intro">Kênh truyền thông Giáo dục<br class="d-xl-block d-none"> Sức
@@ -181,7 +188,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6 fadeIn">
-                <a href="" class="home-products__item ">
+                <a href="" class="home-products__item">
                     <img class="home-products__thumbnail" src="./assets/img/products/DCS/dcs.jpg" alt="">
                     <div class="home-products__content">
                         <img src="./assets/img/products/DCS/dcs-logo.svg" alt=""
@@ -205,11 +212,68 @@
         </div>
     </div>
 
-    <section class="section section-title">
+    <div class="section section-title">
         <h1 class="title-partner">ĐỐI TÁC</h1>
-        <h2>Chúng tôi tự hào khi có sự hợp tác thành công
+        <h2 class="section__intro">Chúng tôi tự hào khi có sự hợp tác thành công
             <br class="d-xl-block d-none">
             với nhiều đơn vị danh tiếng</h2>
+    </div>
+
+    <section class="variable slider slick-initialized slick-slider slick-dotted">
+        <button class="slick-prev slick-arrow" aria-label="Previous" type="button"
+            style="display: block;">Previous</button>
+        <div class="slick-list draggable">
+            <div class="slick-track" style="opacity: 1; width: 30000px; transform: translate3d(-360px, 0px, 0px);">
+                <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1">
+                    <div>
+                        <div class="home-partners__item">
+                            <img src="./assets/img/partners/sanofi.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false"
+                    role="tabpanel" id="slick-slide70" aria-describedby="slick-slide-control70">
+                    <div>
+                        <div class="home-partners__item">
+                            <img src="./assets/img/partners/vinamilk.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide71"
+                    aria-describedby="slick-slide-control71" tabindex="-1">
+                    <div>
+                        <div class="home-partners__item">
+                            <img src="./assets/img/partners/gsk.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel"
+                    id="slick-slide72" aria-describedby="slick-slide-control72">
+                    <div>
+                        <div class="home-partners__item">
+                            <img src="./assets/img/partners/bayer.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="tabpanel"
+                    id="slick-slide73" aria-describedby="slick-slide-control73">
+                    <div>
+                        <div class="home-partners__item">
+                            <img src="./assets/img/partners/mundipharma.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="tabpanel"
+                    id="slick-slide74" aria-describedby="slick-slide-control74">
+                    <div>
+                        <div class="home-partners__item">
+                            <img src="./assets/img/partners/egis.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
     </section>
 
 </body>

@@ -1,3 +1,37 @@
+/* FONT 4 ALL */
+
+.font-4-all {
+	font-family: MyriadPro;
+}
+
+/* HEADER BOTTOM */
+
+.menu-item__link {
+	color: #00354f!important;
+	font-size: 20px;
+	position: relative;
+	padding: 20px 25px!important;
+}
+
+.menu-item__link:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 3px;
+	background: red;
+	bottom: 15px;
+	-webkit-transition: .3s all;
+	transition: .3s all;
+}
+
+.menu-item__link:hover:before {
+	width: 68%;
+}
+
+.menu-item__link--active::before{
+	width: 68%;
+}
+
 /* NAVBAR-CSS */
 
 a.navbar-brand {
@@ -120,7 +154,8 @@ html {
 }
 
 .home-products__item {
-	height: 480px;
+	height: 470px;
+	width: 95%;
 	position: relative;
 	display: inline-block;
 	-webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
@@ -158,20 +193,23 @@ html {
 
 .home-products__thumbnail {
 	width: 100%;
+	height: 480px;
 }
 
 .home-products__logo {
 	max-width: 100%;
 	margin-bottom: 15px;
 }
+
 .home-products__logo--option1 {
 	max-width: 50%;
 }
-.home-products__logo--option2{
+
+.home-products__logo--option2 {
 	max-width: 70%;
 }
 
-.title-partner{
+.title-partner {
 	color: #00a900;
 	text-align: center;
 	font-weight: 500;
@@ -187,4 +225,14 @@ html {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+}
+
+.section__intro {
+	text-align: center;
+	color: #00354f;
+}
+
+.home-partners__item img {
+    max-width: 60%;
+    max-height: 150px;
 }
