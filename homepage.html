@@ -6,26 +6,11 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Medihub</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel="stylesheet" href="./assets/css/app.css">
-    <link rel="stylesheet" href="./assets/css/slick.css">
-    <link rel="stylesheet" href="./assets/css/slick-theme.css">
-    <!-- Bootstrap-CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- CSS -->
 
-    <!-- Bootstrap-JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-    <!-- Javascript -->
-    <script src="./assets/js/slick.js"></script>
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick-slider/slick/slick-theme.css">
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -48,24 +33,23 @@
             </a>
             <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngClass]="{ show: isExpanded }">
                 <ul class="navbar-nav flex-grow">
-                    <li class="nav-item" [routerLinkActive]="['link-active']"
-                        [routerLinkActiveOptions]="{ exact: true }">
+                    <li class="nav-item">
                         <a class="nav-link text-light" href="#">VI</a>
                     </li>
-                    <li class="nav-item" [routerLinkActive]="['link-active']">
+                    <li class="nav-item">
                         <a class="nav-link text-light" href="#">EN</a>
                     </li>
-                    <li class="nav-item" [routerLinkActive]="['link-active']">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fa fa-facebook-square"></i>
                         </a>
                     </li>
-                    <li class="nav-item" [routerLinkActive]="['link-active']">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fa fa-youtube-play"></i>
                         </a>
                     </li>
-                    <li class="nav-item" [routerLinkActive]="['link-active']">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fa fa-linkedin-square"></i>
                         </a>
@@ -217,65 +201,64 @@
         <h2 class="section__intro">Chúng tôi tự hào khi có sự hợp tác thành công
             <br class="d-xl-block d-none">
             với nhiều đơn vị danh tiếng</h2>
-    </div>
-
-    <section class="variable slider slick-initialized slick-slider slick-dotted">
-        <button class="slick-prev slick-arrow" aria-label="Previous" type="button"
-            style="display: block;">Previous</button>
-        <div class="slick-list draggable">
-            <div class="slick-track" style="opacity: 1; width: 30000px; transform: translate3d(-360px, 0px, 0px);">
-                <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1">
-                    <div>
-                        <div class="home-partners__item">
-                            <img src="./assets/img/partners/sanofi.png">
-                        </div>
-                    </div>
+            <div class="home-partners__slider multiple-items mt-3">
+                <div class="home-partners__item">
+                    <img src="./assets/img/partners/sanofi.png" alt="">
                 </div>
-                <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false"
-                    role="tabpanel" id="slick-slide70" aria-describedby="slick-slide-control70">
-                    <div>
-                        <div class="home-partners__item">
-                            <img src="./assets/img/partners/vinamilk.png">
-                        </div>
-                    </div>
+                <div class="home-partners__item">
+                    <img src="./assets/img/partners/gsk.png" alt="">
                 </div>
-                <div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide71"
-                    aria-describedby="slick-slide-control71" tabindex="-1">
-                    <div>
-                        <div class="home-partners__item">
-                            <img src="./assets/img/partners/gsk.png">
-                        </div>
-                    </div>
+                <div class="home-partners__item">
+                    <img src="./assets/img/partners/mundipharma.png" alt="">
                 </div>
-                <div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel"
-                    id="slick-slide72" aria-describedby="slick-slide-control72">
-                    <div>
-                        <div class="home-partners__item">
-                            <img src="./assets/img/partners/bayer.png">
-                        </div>
-                    </div>
+                <div class="home-partners__item">
+                    <img src="./assets/img/partners/egis.png" alt="">
                 </div>
-                <div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="tabpanel"
-                    id="slick-slide73" aria-describedby="slick-slide-control73">
-                    <div>
-                        <div class="home-partners__item">
-                            <img src="./assets/img/partners/mundipharma.png">
-                        </div>
-                    </div>
+                <div class="home-partners__item">
+                    <img src="./assets/img/partners/vinamilk.png" alt="">
                 </div>
-                <div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="tabpanel"
-                    id="slick-slide74" aria-describedby="slick-slide-control74">
-                    <div>
-                        <div class="home-partners__item">
-                            <img src="./assets/img/partners/egis.png">
-                        </div>
-                    </div>
+                <div class="home-partners__item">
+                    <img src="./assets/img/partners/bayer.png" alt="">
                 </div>
             </div>
-        </div>
-        <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
-    </section>
+    </div>
+
+    <div class="section section-title">
+        <h1 class="title-partner">TIN TỨC</h1>
+        <a href="#">
+            <img src="./assets/img/news/news-1.jpg" alt="">
+            <div class="home-news__content">
+                <h3>Hệ sinh thái CNTT & Truyền thông (ICT) Y tế đầu tiên tại Việt Nam</h3>
+            </div>
+        </a>
+    </div>
+        
+    
+
+
+
+
+    <!-- Bootstrap-CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Bootstrap-JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- Javascript, Jquery -->
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
 
 </body>
+
+
 
 </html>
