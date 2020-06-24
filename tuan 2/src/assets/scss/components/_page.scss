@@ -1,3 +1,41 @@
-.mlem {
-    color: #f0f;
+.header-top {
+    padding: .5rem;
+    background: #083791;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-top-content{
+    a{
+        color: white;
+    }
+
+}
+
+.header-top {
+    a:hover{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+// HEADER MENU
+.header-menu{
+    padding: .7rem;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    font-weight: bold;
+}
+.nav-link{
+    color: #083791;
+}
+.fa-search{
+    color: #083791;
+}
+
+// BODY
+.home-img{
+    height: 200px;
+    img{
+        width: 100%;
+    }
 }
