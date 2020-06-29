@@ -99,7 +99,7 @@
         color: #083791;
         font-family: 'Muli', sans-serif;
         font-weight: 900;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .f-news__title3 {
@@ -185,22 +185,20 @@
     margin-top: 100px;
     height: 650px;
     position: relative;
-
     img {
         opacity: 70%;
         width: 100%;
         display: block;
-        position: relative;
     }
 }
 
 .home-img-content2 {
     position: absolute;
     display: block;
-    top: 200px;
+    top: 80px;
     right: 100px;
     font-family: 'Muli', sans-serif;
-    width: 40%;  
+    width: 40%;
     .cover-content2 {
         color: white;
     }
@@ -222,7 +220,7 @@
     top: -100px;
     left: 200px;
     width: 350px;
-    height: 450px;
+    height: 500px;
     border-radius: 15px;
     position: absolute;
     display: flex;
@@ -234,13 +232,182 @@
         font-weight: 900;
         font-size: 1.5rem;
     }
-    .departments-list{
-        padding: 1rem 0 2rem 0;
+    a{
         font-family: 'Muli', sans-serif;
-        text-align: left;
-        font-size: 1rem;
-        font-weight: 400;
-        color: white;
-        list-style-type: none;
+        font-weight: 700;
+        color: #ff8e32;
+        &:hover{
+            text-decoration: none;
+        }
     }
+}
+
+.departments-list{
+    padding: 1rem 0 2rem 0;
+    font-family: 'Muli', sans-serif;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    list-style-type: none;
+    li{
+        margin-top: .8rem;
+    }
+}
+
+// SECOND
+
+.home-img2-button{
+    bottom: -9px;
+    left: 200px;
+    position: absolute;
+    margin-top: .1rem;    
+    
+    .btn-white{
+        background-color: white;
+        color: #083791;
+        font-family: 'Muli', sans-serif;
+        font-weight: 700;
+        padding: .5rem 2rem .5rem 2rem;
+        border-radius: .25rem;
+    }
+}
+
+.btn-blue{
+    background-color: #083791;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    padding: .5rem 2rem .5rem 2rem;
+    border-radius: .25rem;
+    &:hover {
+        color: white;
+    }
+}
+
+.s-news2 {
+    background-color: #fff;
+    height: 180px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+    &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 5px;
+        background: #083791;
+        bottom: 0rem;
+        -webkit-transition: .5s all;
+        transition: .5s all;
+        text-decoration: none;
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+.second{
+    padding: 100px;
+    display: block;
+}
+
+.s-news-content2 {
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+    display: block;
+    padding: 20px;
+
+    .s-news_intro2 {
+        color: #083791;
+        font-weight: 800;
+        font-size: 1.25rem;
+        margin: 10px;
+    }
+
+    .s-news-intro_discover2 {
+        color: grey;
+        cursor: pointer;
+        font-weight: bolder;
+
+        &:hover {
+            color: #083791;
+            transition: .3s all;
+        }
+    }
+}
+
+.s-news-intro_details2 {
+    font-family: 'Muli', sans-serif;
+    color: grey;
+    font-weight: 600;
+    margin-left: 1.5rem;
+}
+
+.f-news2 {
+
+    .f-news2__title1 {
+        color: #083791;
+        font-family: 'Muli', sans-serif;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+
+    .f-news2__title2 {
+        color: #083791;
+        font-family: 'Muli', sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    .f-news2__title3 {
+        color: grey;
+        font-family: 'Muli', sans-serif;
+        font-weight: 400;
+        text-align: justify;
+        margin-bottom: 2.5rem;
+    }
+}
+
+// THIRD
+.third{
+    margin-top: 5rem;
+}
+
+.bg-members{
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/background-blue.png);
+    background-size: cover;
+}
+
+.bg-members_content{
+    padding: 3rem;
+    color: white;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    .members-f-content{
+        font-weight: 700;
+    }
+    .members-s-content{
+        font-size: 2rem;        
+        font-weight: 900;
+    }
+}
+
+.member-card{
+    display: flex;
+}
+.member-card-item{
+    background-color: #fff;
+    height: 380px;
+    width: 290px;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
 }
