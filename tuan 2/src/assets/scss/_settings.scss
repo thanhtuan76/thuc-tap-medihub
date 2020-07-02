@@ -1,14 +1,40 @@
 $main-color: #083791;
+$darkgrey: #444444;
 
-.font-muli{
+.font-muli {
     font-family: 'Muli', sans-serif;
 }
-.font-muli-grey{
+
+.font-muli-grey {
     font-family: 'Muli', sans-serif;
-    color: grey;
+    color: #808080;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
+}
+
+// BACK TO TOP
+.cd-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background: url(../img/cd-top-arrow.svg) no-repeat center 50%;
+    background-color: rgb(228, 98, 98);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.cd-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 

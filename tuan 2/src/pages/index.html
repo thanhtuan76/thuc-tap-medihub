@@ -368,7 +368,7 @@
                 <a class="blog-news" href="#">
                     <img src="assets/img/doctor/newsblog1.jpg">
                     <div class="blog-news-content">
-                        <div class="datetime">
+                        <div class="datetime hov">
                             <p class="datetime-content">15</p>
                             <p class="datetime-content2">Oct</p>
                         </div>
@@ -377,10 +377,10 @@
                             about wisdom
                         </p>
                         <p class="blog-news-intro_details">
-                            Lorem ipsum dolor sit amet, 
+                            Lorem ipsum dolor sit amet,
                             consect sicing elit eiusm tempor labore.
                         </p>
-                        <p class="blog-news_discover">
+                        <p class="blog-news_discover hov">
                             Read more
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </p>
@@ -400,7 +400,7 @@
                             about wisdom
                         </p>
                         <p class="blog-news-intro_details">
-                            Lorem ipsum dolor sit amet, 
+                            Lorem ipsum dolor sit amet,
                             consect sicing elit eiusm tempor labore.
                         </p>
                         <p class="blog-news_discover">
@@ -423,7 +423,7 @@
                             about wisdom
                         </p>
                         <p class="blog-news-intro_details">
-                            Lorem ipsum dolor sit amet, 
+                            Lorem ipsum dolor sit amet,
                             consect sicing elit eiusm tempor labore.
                         </p>
                         <p class="blog-news_discover">
@@ -443,26 +443,131 @@
             <div class="appartment-inside">
                 <h2>Apartments</h2>
                 <p>Clinic health are available 24/7</p>
-                <form action="/action_page.php">
-                    <select id="npatient" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                      </select>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                
-                    <select id="country" name="country">
-                      <option value="australia">Australia</option>
-                      <option value="canada">Canada</option>
-                      <option value="usa">USA</option>
+                <form>
+                    <select class="form-ctrl" id="npatient" name="patient">
+                        <option value="p1">New Patient*</option>
+                        <option value="p2">Patient 1</option>
+                        <option value="p3">Patient 2</option>
                     </select>
-                  
-                    <input type="submit" value="Submit">
-                  </form>
+                    <input class="form-ctrl" type="text" id="fname" name="firstname" placeholder="Your name*">
+                    <select class="form-ctrl" id="country" name="country">
+                        <option value="d1">Patient Date*</option>
+                        <option value="d2">Patient Date*</option>
+                        <option value="d3">Patient Date*</option>
+                    </select>
+                    <input class="form-ctrl" type="email" id="lname" name="lastname" placeholder="Email or Phone*">
+                    <select class="form-ctrl" id="country" name="country">
+                        <option value="g">Patient Gender*</option>
+                        <option value="g1">Male</option>
+                        <option value="g2">Female</option>
+                    </select>
+                    <button class="btn form-ctrl btn-orrange">Submit Request →</button>
+                </form>
             </div>
             <img src="assets/img/bgform.png">
         </div>
+        <div class="appartment-content">
+            <p class="app-content-title1">Get in touch</p>
+            <p class="app-content-title2">Some of your questions are very 
+                serious for us feel free ask 
+                our any time?</p>
+            <p>We are here to assist you with your cooperation in the 24/7 day. 
+                are we ready to respond to you by following the information sent 
+                to you at the appropriate price. Thank you</p>
+            <p>If you can not reply to a serious cause, <br> 
+                please contact the numbare below</p>
+            <h6>
+                <i class='fas fa-phone-alt'></i>
+                +999 695 698 895
+            </h6>
+        </div>
     </div>
 </section>
+
+<section class="eighth">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 footer-first-col">
+                <img src="assets/img/logo.png">
+                <p class="font-muli-grey">The health Clinic provides health service to relieve
+                    your pain. Urgent care pertains to immediate 
+                   treatment to stabilise an acute and debilitating 
+                   health situation.a situation is deemed ‘urgent’ 
+                   upon diagnosis of health infection</p>
+                <a class="read-more" href="#">
+                    Read more →
+                </a>
+            </div>
+            <div class="col-lg-2">
+                <p class="col-title">Our services</p>
+                <div class="svc-item">
+                    <p class="font-muli-grey">Outpatient Surgery</p>
+                    <p class="font-muli-grey">Cardiac Clinicy</p>
+                    <p class="font-muli-grey">Ophthalmology Clinic</p> 
+                    <p class="font-muli-grey">Gynaecological Clinic</p> 
+                    <p class="font-muli-grey">Find medical error</p> 
+                    <p class="font-muli-grey">Laryngological Clinic</p> 
+                    <p class="font-muli-grey">Pediatric Clinic</p>
+                </div>    
+            </div>
+            <div class="col-lg-3">
+                <p class="col-title">Recent post</p>
+                <div class="post">
+                    <p>What you need to know about 
+                        wisdom</p>
+                    <span class="font-muli-grey">October 25, 2018</span>
+                    <hr>
+                </div>
+                <div class="post">
+                    <p>What you need to know about 
+                        wisdom</p>
+                    <span class="font-muli-grey">October 25, 2018</span>
+                    <hr>
+                </div>
+                <div class="post">
+                    <p>What you need to know about 
+                        wisdom</p>
+                    <span class="font-muli-grey">October 25, 2018</span>
+                </div>
+            </div>
+            
+            <div class="col-lg-3">
+                <p class="col-title">Newslatter</p>
+                <span class="font-muli-grey">
+                    Lorem ipsum dolor sit aconsectetur 
+                    adipisicing elit eiusmte incididunt 
+                    ut labore et dolore magna
+                </span>
+                <input class="form-ctrl" type="email" id="lname" name="lastname" placeholder="Email or Phone*">
+                <button class="btn form-ctrl btn-orrange">Submit</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container">
+        <hr>
+        <div class="row footer-inside">
+            <div class="col-lg footer-left">
+                © 2020 all rights reserved
+            </div>
+            <div class="col-lg footer-right">
+                <a href="#">
+                    <img class="ichover" src="assets\img\icfacebook.png" alt="icfacebook">
+                </a>
+                <a href="#">
+                    <img class="ichover" src="assets\img\ictwitter.png" alt="ictwitter">
+                </a>
+                <a href="#">
+                    <img class="ichover" src="assets\img\icvimeo.png" alt="icvimeo">
+                </a>
+                <a href="#">
+                    <img class="ichover" src="assets\img\icshare.png" alt="icshare">
+                </a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="cd-top"></a>
+</section>
+
