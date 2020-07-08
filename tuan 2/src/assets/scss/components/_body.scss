@@ -7,15 +7,48 @@
         opacity: 90%;
         width: 100%;
     }
+
     &-content {
 
         top: 264px;
         right: 100px;
         position: absolute;
-    
+
         .content-cover {
             color: #083791;
         }
+    }
+}
+
+.slick-btn-left {
+    position: absolute;
+    top: 320px;
+    left: 20px;
+    cursor: pointer;
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.384);
+    opacity: 50%;
+
+    &:hover {
+        background-color: white;
+        opacity: 100%;
+        transition: .5s ease;
+    }
+}
+
+.slick-btn-right {
+    position: absolute;
+    top: 320px;
+    right: 20px;
+    cursor: pointer;
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.384);
+    opacity: 50%;
+
+    &:hover {
+        background-color: white;
+        opacity: 100%;
+        transition: .5s ease;
     }
 }
 
@@ -246,9 +279,11 @@
     font-weight: 700;
     padding: .5rem 2rem .5rem 2rem;
     border-radius: .25rem;
+    text-decoration: none;
+    border: none;
 
-    &:hover {
-        color: white;
+    &:focus {
+        outline: none;
     }
 }
 
@@ -280,7 +315,18 @@
     }
 }
 
-.second {
+// .our-service{
+//     position: absolute;
+//     top: 650px;
+//     left: 185px;
+// }
+
+.service {
+    padding: 100px;
+    display: block;
+}
+
+.mission {
     padding: 100px;
     display: block;
 }
@@ -345,7 +391,8 @@
 // THIRD
 
 .third {
-    margin-top: 5rem;
+    position: relative;
+    margin-top: 4rem;
 }
 
 .bg-members {
@@ -545,28 +592,51 @@
 // FIFTH
 
 .fifth {
-    margin-bottom: 30rem;
+    margin-bottom: 2rem;
 }
 
 .bg-fif {
-    position: absolute;
+    background-image: url(../img/waveshape.png);
+    background-size: cover;
+    width: 100%;
 
-    img {
-        width: 100%;
+    .bg-fif-content {
+        padding-bottom: 6rem;
+    }
+
+    .fif-content-item {
+        margin-top: 10rem;
+        text-align: center;
+
+        h1 {
+            font-family: 'Muli', sans-serif;
+            font-weight: 600;
+            color: #083791;
+        }
+        p{
+            font-family: 'Muli', sans-serif;
+            font-weight: 900;
+            color: rgb(83, 83, 83);
+        }
     }
 }
 
 .bg-fif2 {
+    .bg-fif2-content {
+        position: absolute;
+        top: 50px;
+        right: 150px;
+    }
+
     position: relative;
+    width: 100%;
     height: 600px;
-    top: 360px;
     overflow: hidden;
     background-image: url(../img/doctor/bg3.jpg);
     background-size: cover;
 
     .extra-img {
-        position: absolute;
-        top: -700px;
+        width: 30%;
     }
 }
 
@@ -581,12 +651,6 @@
     color: #083791;
     font-family: 'Muli', sans-serif;
     font-weight: 900;
-}
-
-.bg-fif2-content {
-    position: absolute;
-    top: 50px;
-    right: 150px;
 }
 
 .ques-1 {
@@ -862,6 +926,6 @@
     }
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }

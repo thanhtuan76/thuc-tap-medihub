@@ -9,6 +9,8 @@ $('.multiple-items').slick({
   nextArrow: '.next',
 });
 
+$('.single-item').slick();
+
 $('.multiple-items-news').slick({
   infinite: true,
   slidesToShow: 4,
